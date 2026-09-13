@@ -115,11 +115,11 @@ fits your next project.
           <img
             src={heroImage}
             alt="banner-stack.png"
-            className="
-              w-full
-              max-w-lg
-              mx-auto
-            "
+             className="
+   w-full
+   max-w-md
+   mx-auto
+ "
           />
 
         </div>
