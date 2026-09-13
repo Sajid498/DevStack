@@ -71,7 +71,17 @@ font-bold
 mb-8
 ">
 
-Explore Technologies
+Explore the 
+<span className="
+bg-gradient-to-r
+from-orange-500
+via-pink-500
+to-purple-600
+bg-clip-text
+text-transparent
+">
+Technologies
+</span>
 
 </h2>
 

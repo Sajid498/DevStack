@@ -20,39 +20,46 @@ function Hero() {
         <div className="flex-1">
 
 
-          <h1 className="
-            text-4xl
-            md:text-5xl
-            lg:text-6xl
-            font-bold
-            leading-tight
-          ">
+         <h1 className="
+ text-4xl
+ md:text-5xl
+ lg:text-6xl
+ font-bold
+ leading-tight
+">
 
-            Build Your
-            <span className="
-              bg-gradient-to-r
-              from-orange-500
-              via-pink-500
-              to-purple-600
-              bg-clip-text
-              text-transparent
-            ">
-              {" "}Developer Stack
-            </span>
+Build Your Ideal
 
-          </h1>
+<br />
+
+<span className="
+ bg-gradient-to-r
+ from-orange-500
+ via-pink-500
+ to-purple-600
+ bg-clip-text
+ text-transparent
+">
+
+Development Stack
+
+</span>
+
+</h1>
 
 
-          <p className="
-            mt-6
-            text-gray-600
-            text-lg
-            max-w-xl
-          ">
-            Explore modern technologies, create your own
-            development stack, and learn the tools used by
-            professional developers worldwide.
-          </p>
+         <p className="
+mt-6
+text-gray-600
+text-lg
+max-w-xl
+">
+
+Explore frontend, backend, database, and tooling options,
+compare them side by side, and put together the stack that
+fits your next project.
+
+</p>
 
 
 
