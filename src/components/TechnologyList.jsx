@@ -1,77 +1,26 @@
-import { useEffect, useState } from "react";
-import TechnologyCard from "./TechnologyCard";
-
-
-
-function TechnologyList({stack, addToStack}){
-
-
-const [technologies,setTechnologies]=useState([]);
-
-const [loading,setLoading]=useState(true);
-
-
-
-useEffect(()=>{
-
-
-fetch("/technologies.json")
-
-.then(res=>res.json())
-
-.then(data=>{
-
-
-setTechnologies(data);
-
-setLoading(false);
-
-
-});
-
-
-},[]);
-
-
-
-if(loading){
-
-return (
-
-<h2 className="
-text-center
-text-xl
-font-bold
-py-10
-">
-
-Loading Technologies...
-
-</h2>
-
-)
-
-}
-
-
-
 return (
 
 <section className="
 max-w-7xl
 mx-auto
 px-5
-py-16
+pt-20
+pb-16
 ">
 
 
 <h2 className="
-text-3xl
+text-4xl
 font-bold
-mb-8
+mb-3
 ">
 
-Explore the 
+<span className="text-[#111827]">
+Explore the
+</span>
+
+{" "}
+
 <span className="
 bg-gradient-to-r
 from-orange-500
@@ -83,7 +32,22 @@ text-transparent
 Technologies
 </span>
 
+
 </h2>
+
+
+
+<p className="
+text-gray-500
+text-base
+md:text-lg
+mb-8
+">
+
+Pick one technology per category to build your ideal stack.
+
+</p>
+
 
 
 
@@ -126,9 +90,3 @@ addToStack={addToStack}
 </section>
 
 )
-
-
-}
-
-
-export default TechnologyList;
