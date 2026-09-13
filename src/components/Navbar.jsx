@@ -1,16 +1,28 @@
+import logo from "../assets/logo-text.png";
+
 function Navbar() {
   return (
-    <nav className="sticky top-0 z-50 bg-white shadow-md">
+   <nav className="
+sticky
+top-0
+z-50
+bg-white
+border-b
+border-gray-100
+">
       <div className="max-w-7xl mx-auto px-5 py-4 flex items-center justify-between">
 
-        {/* Logo */}
-        <div className="text-2xl font-bold">
-          <span className="text-orange-500">Dev</span>
-          <span className="text-purple-600"> Stack</span>
-        </div>
+
+        <img
+  src={logo}
+  alt="Dev Stack"
+  className="
+    w-40
+    h-auto
+  "
+/>
 
 
-        {/* Desktop Menu */}
         <div className="hidden md:flex gap-8 font-medium">
           <a href="#">Home</a>
           <a href="#">Technologies</a>
@@ -20,7 +32,7 @@ function Navbar() {
         </div>
 
 
-        {/* Buttons */}
+      
         <div className="hidden md:flex gap-3">
           <button className="font-medium">
             Sign In
@@ -39,7 +51,7 @@ function Navbar() {
         </div>
 
 
-        {/* Mobile */}
+
        <div className="
 md:hidden
 flex
@@ -52,9 +64,11 @@ w-full
             ☰
           </button>
 
-          <div className="font-bold text-lg">
-            Dev Stack
-          </div>
+      <img
+  src={logo}
+  alt="Dev Stack"
+  className="w-28"
+/>
 
           <div className="flex gap-2">
             <button className="text-sm">

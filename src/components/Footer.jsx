@@ -21,7 +21,7 @@ function Footer() {
       ">
 
 
-        {/* Top Section */}
+ 
 
         <div className="
           grid
@@ -31,7 +31,7 @@ function Footer() {
         ">
 
 
-          {/* Brand */}
+  
 
           <div>
 
@@ -87,7 +87,7 @@ function Footer() {
 
 
 
-          {/* Product */}
+
 
           <div>
 
@@ -122,7 +122,7 @@ function Footer() {
 
 
 
-          {/* Company */}
+       
 
           <div>
 
@@ -157,7 +157,7 @@ function Footer() {
 
 
 
-          {/* Legal */}
+        
 
           <div>
 

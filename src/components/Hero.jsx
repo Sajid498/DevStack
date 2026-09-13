@@ -16,7 +16,6 @@ function Hero() {
       ">
 
 
-        {/* Left Content */}
         <div className="flex-1">
 
 
@@ -63,7 +62,7 @@ fits your next project.
 
 
 
-          {/* Buttons */}
+
           <div className="
             mt-8
             flex
@@ -108,7 +107,6 @@ fits your next project.
 
 
 
-        {/* Right Image */}
 
         <div className="flex-1">
 

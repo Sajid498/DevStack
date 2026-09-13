@@ -17,7 +17,7 @@ function TechnologyCard({
     ">
 
 
-      {/* Icon */}
+   
 
       <img
         src={technology.icon}
@@ -30,7 +30,7 @@ function TechnologyCard({
       />
 
 
-      {/* Badge */}
+ 
 
       <span className="
         text-sm
@@ -44,7 +44,7 @@ function TechnologyCard({
       </span>
 
 
-      {/* Name */}
+  
 
       <h2 className="
         text-xl
@@ -55,7 +55,7 @@ function TechnologyCard({
       </h2>
 
 
-      {/* Description */}
+  
 
       <p className="
         text-gray-600
@@ -67,7 +67,7 @@ function TechnologyCard({
 
 
 
-      {/* Details */}
+
 
       <div className="mt-4 space-y-2">
 
@@ -97,7 +97,7 @@ function TechnologyCard({
 
 
 
-      {/* Button */}
+    
 <button
 
 disabled={
