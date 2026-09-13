@@ -5,63 +5,94 @@ function TechnologyCard({
 }) {
 
 
+  const isAdded = stack.some(
+    item => item.id === technology.id
+  );
+
+
+
   return (
 
-    <div className="
-      bg-white
-      rounded-xl
-      shadow-md
-      p-6
-      hover:shadow-xl
-      transition
-    ">
+    <div
+      className={`
+        rounded-xl
+        shadow-md
+        p-6
+        transition-all
+        duration-300
+        border
+
+        ${
+          isAdded
+
+          ?
+
+          "bg-purple-50 border-purple-500 shadow-purple-200"
+
+          :
+
+          "bg-white border-gray-100 hover:shadow-xl"
+
+        }
+
+      `}
+    >
 
 
-   
 
       <img
         src={technology.icon}
         alt={technology.name}
         className="
-          w-16
-          h-16
-          mb-4
+          w-12
+          h-12
+          mb-5
+          object-contain
         "
       />
 
 
- 
 
-      <span className="
-        text-sm
-        px-3
-        py-1
-        rounded-full
-        bg-purple-100
-        text-purple-600
-      ">
+      <span
+        className="
+          text-xs
+          px-3
+          py-1
+          rounded-full
+          bg-purple-100
+          text-purple-600
+          inline-block
+        "
+      >
         {technology.badge}
       </span>
 
 
-  
 
-      <h2 className="
-        text-xl
-        font-bold
-        mt-4
-      ">
+
+      <h2
+        className="
+          text-xl
+          font-bold
+          mt-4
+          text-gray-900
+        "
+      >
         {technology.name}
       </h2>
 
 
-  
 
-      <p className="
-        text-gray-600
-        mt-2
-        text-sm
-      ">
+
+
+      <p
+        className="
+          text-gray-600
+          mt-2
+          text-sm
+          leading-5
+        "
+      >
         {technology.description}
       </p>
 
@@ -69,23 +100,35 @@ function TechnologyCard({
 
 
 
-      <div className="mt-4 space-y-2">
+
+      <div className="
+        mt-5
+        space-y-3
+        text-sm
+      ">
 
 
         <p>
           Category:
+
           <span className="font-semibold">
             {" "}{technology.category}
           </span>
+
         </p>
+
 
 
         <p>
           Level:
+
           <span className="font-semibold">
             {" "}{technology.difficulty}
           </span>
+
         </p>
+
+
 
 
         <p>
@@ -97,60 +140,59 @@ function TechnologyCard({
 
 
 
-    
-<button
-
-disabled={
-  stack.some(
-    item => item.id === technology.id
-  )
-}
-
-onClick={() => addToStack(technology)}
-
-className={`
-mt-5
-w-full
-py-2
-rounded-lg
-text-white
-
-${
-stack.some(
- item => item.id === technology.id
-)
-
-?
-
-"bg-gray-400 cursor-not-allowed"
-
-:
-
-"bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600"
-
-}
-
-`}
->
-
-{
-
-stack.some(
- item => item.id === technology.id
-)
-
-?
-
-"✓ Added to Stack"
-
-:
-
-"Add to Stack"
-
-}
 
 
-</button>
+
+      <button
+
+        disabled={isAdded}
+
+        onClick={() => addToStack(technology)}
+
+        className={`
+          mt-5
+          w-full
+          py-2
+          rounded-lg
+          text-white
+          font-medium
+          transition-all
+
+
+          ${
+            isAdded
+
+            ?
+
+            "bg-green-500 cursor-not-allowed"
+
+            :
+
+            "bg-[#111827] hover:bg-black"
+
+          }
+
+        `}
+
+      >
+
+        {
+          isAdded
+
+          ?
+
+          "✓ Added to Stack"
+
+          :
+
+          "Add to Stack"
+
+        }
+
+
+      </button>
+
+
 
 
 
