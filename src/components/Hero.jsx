@@ -114,7 +114,7 @@ fits your next project.
 
           <img
             src={heroImage}
-            alt="Developer stack"
+            alt="banner-stack.png"
             className="
               w-full
               max-w-lg
